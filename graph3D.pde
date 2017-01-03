@@ -592,7 +592,7 @@ class Graph{
       }
     }
     for(int i = 0; i < polyloop.length; ++i){
-      println("closestRoofPoints " + i + " " + closestRoofPointsMap[i]);
+      //println("closestRoofPoints " + i + " " + closestRoofPointsMap[i]);
     }
     return closestRoofPointsMap;
   }
@@ -657,7 +657,7 @@ class Graph{
   }
   void drawRoof(){
     for(int i = 0; i < nf; ++i){
-      println("i: " + i + " " + "Fdepth: " + Fdepth[i] + " " + "NestedFaces[i].size() " + NestedFaces[i].size());
+      //println("i: " + i + " " + "Fdepth: " + Fdepth[i] + " " + "NestedFaces[i].size() " + NestedFaces[i].size());
       if(Fdepth[i] % 2 == 0){
         if(NestedFaces[i].size() == 0) drawRoof(i);
         else drawRingRoof(i);
